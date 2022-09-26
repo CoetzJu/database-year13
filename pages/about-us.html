@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us</title>
+    <link rel="stylesheet" href="../stylesheets/light-theme.css">
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/content-body.css">
+    <script src="../javascript/functions.js"></script>
+
+</head>
+<body  onload="darkmodeData(), themeChangeData()">
+    <div class="header">
+
+        <div id="logo">
+            <!--This logo will have an image and a link as it also acts as a link-->
+            <!--This will be a home button-->
+
+            <a href="../index.html"><img class="image-resize" style="width: 80%;" src="../images/processed/logo/microbit-logo.png"></a>
+
+        </div>
+
+        <div id="title">
+
+            <h1>Micro:Bits</h1>
+
+        </div>
+
+        <div id="darkmode">
+            <!--This will change the theme for dark and light mode-->
+            <!--Check javascript for the rest of the code-->
+
+            <button onclick="toggleMode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
+
+        </div>
+
+        <div id="mode">
+            <!--This will change the mode between teacher and student-->
+            <button onclick="toggleTheme()" id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
+
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <!--This is the navigation bar where the link to the other pages are.-->
+        <!--This navbar only has four links.-->
+
+        <a href="lessons.html">Lessons</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="microbits.html">Micro:bits</a>
+
+        <a>About Us</a>
+
+    </div>
+
+    <div class="about-us">
+
+        <div class="headline">
+
+            <!--Make new ID for this-->
+            <p class="headline-content">About Us</p>
+
+        </div>
+
+        <p id="about-us-align">
+
+            This website was developed by one person who wanted to create a website that will 
+            help get young and old people to get interested in the idea of using Micro:bits 
+            and programming. The reason why we chose to use micro:bits as the introduction to 
+            programming is because the micro:bits were designed by the BBC for the education of 
+            beginners and young school students. Please bare in mind we do not own the micro:bit 
+            product and only provide information about them. 
+
+        </p>
+
+    </div>
+
+    <div class="copyright">
+
+        <div class="headline">
+
+            <!--Make new ID for this-->
+            <p class="headline-content">Copyright & Privacy</p>
+
+        </div>
+
+        <p id="about-us-align">
+            This website follows New Zealand's copyright act of 1994 as all images have been sourced and edited following the 
+            author's guidelines on what I can and can not do. all images will be shown in their unedited forms in the Gallery with 
+            who took the image and to who it belongs. Any content developed by us is free of use and can be used freely.
+
+            <br>
+            <br>
+
+            This website follows the Right to Privacy act 2020 of New Zealand by not taking data without your permission and we do 
+            not trade personal information for monetary or business gain. All data that will be collected from you will be using the sign-up 
+            feature and we will securely store it to prevent data breaches.
+        </p>
+
+    </div>
+</body>
+</html>

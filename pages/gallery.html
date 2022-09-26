@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../stylesheets/light-theme.css">
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/content-body.css">
+    <script src="../javascript/functions.js"></script>
+
+</head>
+<body  onload="darkmodeData(), themeChangeData()">
+    <div class="header">
+
+        <div id="logo">
+            <!--This logo will have an image and a link as it also acts as a link-->
+            <!--This will be a home button-->
+
+            <a href="../index.html"><img class="image-resize" style="width: 80%;" src="../images/processed/logo/microbit-logo.png"></a>
+
+        </div>
+
+        <div id="title">
+
+            <h1>Micro:Bits</h1>
+
+        </div>
+
+        <div id="darkmode">
+            <!--This will change the theme for dark and light mode-->
+            <!--Check javascript for the rest of the code-->
+
+            <button onclick="toggleMode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
+
+        </div>
+
+        <div id="mode">
+            <!--This will change the mode between teacher and student-->
+            <button onclick="toggleTheme()" id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
+
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <!--This is the navigation bar where the link to the other pages are.-->
+        <!--This navbar only has four links.-->
+
+        <a href="lessons.html">Lessons</a>
+
+        <a>Gallery</a>
+
+        <a href="microbits.html">Micro:bits</a>
+
+        <a href="about-us.html">About Us</a>
+
+    </div>
+
+    <div class="gallery">
+
+        <div class="headline">
+
+            <!--Make new ID for this-->
+            <p class="headline-content">Gallery</p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/Box.jpg">
+            
+            <p>
+                This image belongs to the BBC and the photo can be found <a href="https://www.flickr.com/photos/adafruit/34175872974/in/photostream/">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/cat.jpg">
+            
+            <p>
+                This image belongs to the Pi Supply and the photo can be found <a href="https://www.flickr.com/photos/adafruit/49169313233">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/Join.jpg">
+            
+            <p>
+                This image belongs the Aruld and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_Micro_Bit_with_original_Packaging.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/microbitGND.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.m.wikimedia.org/wiki/File:BBC_micro_bit_(25965958770).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/microbit3V.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_micro_bit_(26146399942).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Moon-icon.png">
+            
+            <p>
+                This image belongs to Alessio Atzeni and the photo can be found <a href="https://www.iconfinder.com/icons/110831/moon_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Student-Icon.png">
+            
+            <p>
+                This image belongs to the Iconfinder and the photo can be found <a href="https://www.iconfinder.com/icons/9025060/student_light_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Teacher-Icon.png">
+            
+            <p>
+                This image belongs to the Iconfinder and the photo can be found <a href="https://www.iconfinder.com/icons/6570720/doctor_lecturer_man_professor_teacher_teaching_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Car.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:GiggleBot_(45226565091).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Name.jpg">
+            
+            <p>
+                This image belongs to Ravi Kotecha and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_Microbit.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Smile.jpg">
+            
+            <p style="padding-bottom: 10%;">
+                This image belongs to Kaethe17 and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:Bbc-microbit-2021.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body> 
+</html>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin-top: 0%;
+    background-color: #23272A ;
+    color: white;
+    max-width: 1920px;
+    height: 100vh;
+    margin: auto;
+}

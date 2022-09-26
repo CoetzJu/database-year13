@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Micro:bits</title>
+    <link rel="stylesheet" href="../stylesheets/light-theme.css">
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/content-body.css">
+    <script src="../javascript/functions.js"></script>
+
+</head>
+<body  onload="darkmodeData(), themeChangeData()">
+    <div class="header">
+
+        <div id="logo">
+            <!--This logo will have an image and a link as it also acts as a link-->
+            <!--This will be a home button-->
+
+            <a href="../index.html"><img class="image-resize" style="width: 80%;" src="../images/processed/logo/microbit-logo.png"></a>
+
+        </div>
+
+        <div id="title">
+
+            <h1>Micro:Bits</h1>
+
+        </div>
+
+        <div id="darkmode">
+            <!--This will change the theme for dark and light mode-->
+            <!--Check javascript for the rest of the code-->
+
+            <button onclick="toggleMode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
+
+        </div>
+
+        <div id="mode">
+            <!--This will change the mode between teacher and student-->
+            <button onclick="toggleTheme(),textSwap()" id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
+
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <!--This is the navigation bar where the link to the other pages are.-->
+        <!--This navbar only has four links.-->
+
+        <a href="lessons.html">Lessons</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a>Micro:bits</a>
+
+        <a href="about-us.html">About Us</a>
+
+    </div>
+
+    <div class="high-profile">
+        <!--This is where the high profile things are. Like slideshows, sign-up and quick lists-->
+        <!--This will be handled by the body stylesheet-->
+
+        <div class="quick-list">
+
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://microbit.org/">The Micro:bit official page</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://microbit.org/buy/">List of official sellers</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://microbit.org/impact/case-studies/">Micro:bit case studies</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://learn.sparkfun.com/tutorials/getting-started-with-the-microbit/all#:~:text=The%20micro%3Abit%20uses%20a,possibly%20blink%20a%20few%20times.">Getting block code onto the Micro:bit</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://microbit.org/get-started/first-steps/set-up/"> Transfer Code to the Micro:bit</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://www.mindkits.co.nz/microbit.aspx">Micro:bit starter kits</a></p>
+            <p class="quick-list-data">  <a class="quick-list-link" href="https://www.bbc.com/">BBC.com (Creators of the Micro:bits)</a></p>
+
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="../images/processed/slideshow/Car.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../images/processed/slideshow/Name.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../images/processed/slideshow/Smile.jpg" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
+        
+
+        <!-- The dots/circles
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+
+        <script>
+            var slideIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var slideDeck = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slideDeck.length; i++) {
+                    slideDeck[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slideDeck.length) {slideIndex = 1}
+                slideDeck[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                console.log(slideDeck);
+            }
+        </script>
+
+        <div id="sign-up">
+
+            <a id="hyperlink-color" href="#"><p class="centered-image-text" id="sign-up-text">Sign-Up Now!</p></a>
+            <a href="#"><img id="image" style="width: 100%;" src="../images/processed/content/Join.jpg"></a>
+
+         </div>
+
+    </div>
+
+    <div class="low-profile">
+
+        <div class="headline" style="height: 10%;">
+
+            <!--Make new ID for this-->
+            <p class="headline-content">Micro:bit</p>
+
+        </div>
+
+        <!--This is where all the main content will be. This includes text and images.-->
+        <!--This is handled with the body stylesheet-->
+
+        <div class="image" style="height: 70%">
+
+            <img class="center" alt="Close up of a microBit" style="width: 99%; margin-top: 0%;" src="../images/processed/content/Box.jpg">
+
+        </div>
+
+        <div id="text">
+
+            <p style="font-size: 1.2em; font-family:  Verdana, Geneva, Tahoma, sans-serif;">
+                A micro:bit is a small computer that is quite sturdy and versatile. They are designed for children and new programmers to begin their 
+                journey to becoming full legitimate programmers. Micro:bits themselves are not very strong computers as the processors are not great 
+                however they are very modular and fully capable of being the brain of physical electronics and inventions. Yes, that is another great 
+                feature of the Micro:bit is that you can change everything it is doing and connect too. For example it can be a car or a automatic plant 
+                waterer. The sky's the limit with Micro:bits and it is a perfect introduction to programming as many people have detected themselves 
+                helping newcomers into the digital world. For all that are interested check the specs down below.
+            </p>
+
+        </div>
+
+        <div class="image" style="height: 70%">
+
+            <img class="center" alt="Close up of a microBit" style="width: 99%; margin-top: 0%;" src="../images/processed/content/cat.jpg">
+
+        </div>
+
+    </div>
+    <div class="low-profile">
+
+        <div class="headline" style="height: 10%; margin-top: 2%;">
+
+            <!--Make new ID for this-->
+            <p class="headline-content">Micro:bit specs</p>
+
+        </div>
+
+
+        <div>
+
+            <p id="about-us-align" style=" margin-top: 2.5%; padding-bottom: 2.5%;">
+
+                Nordic nRF52833 – 64 MHz 32-bit ARM Cortex-M4 microcontroller, 512 KB flash memory, 128 KB static RAM, 2.4 GHz Bluetooth low energy wireless networking provided by Nordic S113 SoftDevice, integrated temperature sensor.
+
+                <br>
+                <br>
+
+                NXP/Freescale KL27Z – 48 MHz ARM Cortex-M0+ core microcontroller, preprogrammed as a full-speed USB 2.0 controller, used as a communication interface between USB and the CPU.
+
+                <br>
+                <br>
+
+                Either ST LSM303 or NXP FXOS8700 – 3-axis combined accelerometer and magnetometer sensor via I²C-bus.
+
+                <br>
+                <br>
+
+                Knowles MEMS microphone with a built-in LED indicator.
+
+                <br>
+                <br>
+
+                Jiangsu Huaneng MLT-8530 magnetic speaker.
+
+                <br>
+                <br>
+
+                MicroUSB connector, JST PH battery connector, 25-pin edge connector.
+
+                <br>
+                <br>
+
+                Display consisting of 25 LEDs in a 5×5 matrix.
+                
+                <br>
+                <br>
+
+                Three tactile pushbuttons (two for applications, one for reset) and a touch sensor button.
+
+                <br>
+                <br>
+
+                In micro:bit v2, the reset button can be used to turn the board off by holding it for 3 seconds
+            </p>
+
+        </div>
+
+        <!-- Table template
+            <table>
+            <tr>
+                <th><img src="../images/processed/content/Join.jpg" alt=""></th>
+                <th><p>soigjrdjdogijodijgoidjgoidjfoisdjgoisj</p></th>
+            </tr>
+        </table>-->
+
+    </div>
+
+</body>
+</html>

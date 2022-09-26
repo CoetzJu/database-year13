@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+/* Borders will be commented out from the structure faze*/
+
+/* Look back as the W3 schools for the list and remeber to outline the rest of the page and other images */
+
+/*.test-mode {
+    font-size: ;
+}*/
+
+
+.header{
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    height: 13vh;
+    
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    
+    background-color: #7198FA;
+    /* Colour for theme 2 #15C8E6*/
+    /* Colour for theme 1 #334AFA*/
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 10%;
+    height: 100%;
+    
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    
+    float: left;
+    box-sizing: border-box;
+}
+
+#title{
+    width: 70%;
+    height: 100%;
+    
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#darkmode{
+    width: 10%;
+    height: 100%;
+    
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    
+    float: left;
+    box-sizing: border-box;
+}
+
+#dark-mode-button{
+    border: none;
+    border-radius: 50%;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    transition-duration: 1.4s;
+}
+
+#dark-mode-button:hover{
+    background-color: #7668ED;
+    /*border-color: black;*/
+}
+
+#mode{
+    width: 10%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    float: left;
+    box-sizing: border-box;
+}
+
+#mode-button{
+    border: none;
+    border-radius: 50%;
+    border-color: #7198FA;
+    background-color: #7198FA;
+    transition-duration: 1.4s;
+}
+
+#mode-button:hover{
+    background-color: #7668ED;
+    /*border-color: black;*/
+}
+
+.navbar{
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    height: 5vh;
+    border-style: solid;
+    border-width: 0.2em;
+    border-top: 0px;
+    border-color: black;
+    background-color: #7198FA;
+    box-sizing: border-box;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    padding: 0.4% 10.221%;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #7198FA;
+    transition-duration: 0.5s;
+}
+
+.navbar a:hover{
+    background-color: #7668ED;
+    transition-duration: 0.5s;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
+  }
+
+  .text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+
+  #header{
+    border: 0.2em;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 10%;
+    background-color: #7198FA;
+    margin-bottom: 1%;
+  }
+  
+  #header-content{
+    margin: 0.25% 0.25%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
