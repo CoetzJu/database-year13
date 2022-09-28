@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* Most of this CSS was taken from the sample. scroll to the bottom for original code*/
+label {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+}
+
+.hotelpic {
+	padding: 25px;
+}
+
+.nav {
+	padding:0;
+	margin-top: 0px;
+}
+
+table {
+	margin-top:-2px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:2vw;
+	margin:auto;
+	
+}
+
+.bottomindextext {
+	margin:auto;
+}
+
+.disclaimers {
+	width:100%;
+	display: flex;
+}
+
+.disclaimers1 {
+	width:20%;
+	float:left;
+	margin-left:25%;
+
+}
+
+.disclaimers2 {
+	width:20%;
+	float:right;
+	margin-left:10%;
+
+}
+
+.disclaimers3 {
+	width:80%;
+	margin:auto;
+	text-align: center;
+
+}
+
+p {	color: black;
+	font-size: 22px;
+	font-family: "";
+}
+
+p.centertext{
+	text-align: center;
+}
+
+.commandgreen{
+margin-left: 27%;
+	float:left;
+}
+
+.commandred{
+float:right;
+margin-right:28%;
+
+}
+
+.labels{
+	font-size: 0.7em;
+	font-weight:300;
+	color:brown;	
+}
+
+.clicklinks {
+	display: block;
+	width: 100%;
+}
+
+.openinginfo {
+	padding-left: 2%;
+	padding-right: 2%;
+	width:100%;
+}
+
+.padded {
+	text-align: center;
+}
+/* from now on this is orginal code*/
+
+#product {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	width: 100%;
+	background-color: #76D44E;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.4em;
+	margin-top: 0px ;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#redbutton{
+	background-color: #F54360;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	transition-duration: 0.3s;
+}
+
+#redbutton:hover{
+	background-color: #DF4360;
+	transition-duration: 0.3s;
+}
+
+#greenbutton{
+	background-color: #9CF06C;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	transition-duration: 0.3s;
+}
+
+#greenbutton:hover{
+	background-color: #61F06C;
+	transition-duration: 0.3s;
+}

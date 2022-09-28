@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../stylesheets/light-theme.css">
     <link rel="stylesheet" href="../../stylesheets/header.css">
     <link rel="stylesheet" href="../../stylesheets/body.css">
+	<link rel="stylesheet" href="../../stylesheets/styledb.css">
     <script src="../../javascript/functions.js"></script>
     <script>
 
@@ -59,6 +60,12 @@
 	
 	<div id="form-block">
 		
+		<div class="headline" style="height: 10%; margin-top: 0.5%">
+				
+            	<p class="headline-content">Sign-Up Now!</p>
+
+       	</div>
+		
 		<form action="receiving-page.php" method="post" id="form-style">
 			
 			<table width="900px" border="0px" align="center">
@@ -68,86 +75,132 @@
 				
 				<tr>
 					
-					<td><label>First name</label></td>
+					<td><label class="center" style="margin-top: 0px">First name</label></td>
 					
-					<td><input name="firstname" maxlength="20" type="text"></td>
-					
-				</tr>
-				
-				<tr>
-					
-					<td><label>Last name</label></td>
-					
-					<td><input name="lastname" maxlength="20" type="text"></td>
+					<td><input class="center" style="margin-top: 0px" name="firstname" maxlength="20" type="text"></td>
 					
 				</tr>
 				
 				<tr>
 					
-					<td><label>Phone number</label></td>
+					<td><label class="center" style="margin-top: 0px">Last name</label></td>
 					
-					<td><input name="phonenumber" maxlength="11" type="number"></td>
-					
-				</tr>
-				
-				<tr>
-					
-					<td><label>Age</label></td>
-					
-					<td><input name="age" maxlength="3" type="number"></td>
+					<td><input class="center" style="margin-top: 0px" name="lastname" maxlength="20" type="text"></td>
 					
 				</tr>
 				
 				<tr>
 					
-					<td><label>Gender</label></td>
+					<td><label class="center" style="margin-top: 0px">Phone number</label></td>
 					
-					<td><input name="gender" maxlength="20" type="text"></td>
-					
-				</tr>
-				
-				<tr>
-					
-					<td><label>Pronouns</label></td>
-					
-					<td><input name="pronouns" maxlength="20" type="text"></td>
+					<td><input class="center" style="margin-top: 0px" name="phonenumber" maxlength="11" type="number"></td>
 					
 				</tr>
 				
 				<tr>
 					
-					<td><label>Email</label></td>
+					<td><label class="center" style="margin-top: 0px">Age</label></td>
 					
-					<td><input name="email" maxlength="30" type="email"></td>
-					
-				</tr>
-				
-				<tr>
-					
-					<td><label> </label></td>
-					
-					<td><input name=" " maxlength=" " type=" "></td>
+					<td><input class="center" style="margin-top: 0px" name="age" maxlength="3" type="number"></td>
 					
 				</tr>
 				
 				<tr>
 					
-					<td><label> </label></td>
+					<td><label class="center" style="margin-top: 0px">Gender</label></td>
 					
-					<td><input name=" " maxlength=" " type=" "</td>
+					<td><input class="center" style="margin-top: 0px" name="gender" maxlength="20" type="text"></td>
 					
 				</tr>
 				
 				<tr>
 					
-					<td><label> </label></td>
+					<td><label class="center" style="margin-top: 0px">Pronouns</label></td>
 					
-					<td><input name=" " maxlength=" " type=" "</td>
+					<td><input class="center" style="margin-top: 0px" name="pronouns" maxlength="20" type="text"></td>
 					
 				</tr>
 				
+				<tr>
+					
+					<td><label class="center" style="margin-top: 0px">Email</label></td>
+					
+					<td><input class="center" style="margin-top: 0px" name="emailaddress" maxlength="30" type="email"></td>
+					
+				</tr>
 				
+				<tr>
+					
+					<td><label class="center" style="margin-top: 0px">Username</label></td>
+					
+					<td><input class="center" style="margin-top: 0px" name="username" maxlength="20" type="username"></td>
+					
+				</tr>
+				
+				<tr>
+					<td><label class="center" style="margin-top: 0px">Sign up to our newletter</label></td>
+					<td>
+						<div class="productselection, center" style="margin-top: 0px">
+							<label class="container">Subscribe
+								<input name="mailing" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<br>
+						</div>
+					</td>
+				</tr>
 			</table>
+			
+			<div class="headline" style="height: 10%;">
+				
+            	<p class="headline-content">Products</p>
+
+       		</div>
+			
+			<table width="900px" border="0px" align="center">
+		
+			<tr>
+				<td >
+					<div class="productselection, center" style="margin-top: 0px">
+							<label class="container">Product 1
+								<input name="Product 1" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<br>
+					</div>
+					
+					<div class="productselection, center" style="margin-top: 0px">
+							<label class="container">Product 2
+								<input name="Product 2" type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<br>
+					</div>
+				</td>
+
+				<td class="">
+					<div class="productselection"><label class="container"> Product 3</label>
+							<input name="Product 3" type="checkbox">
+							<span class="checkmark"></span>
+						
+						<br>
+						
+						<label class="container">Product 4</label>
+							<input name="Product 4" type="checkbox">
+							<span class="checkmark"></span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="commandconfirm"><input type="submit" value="Submit" id="greenbutton"></div>
+				</td>
+				<td class="">
+					<div class="commandcancel"><input type="Reset" value="Reset" id="redbutton"></div>
+				</td>
+
+			</tr>
+		</table>
 			
 		</form>
 		
