@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Micro:Bits</title>
+    <link rel="stylesheet" href="../../stylesheets/light-theme.css">
+    <link rel="stylesheet" href="../../stylesheets/header.css">
+    <link rel="stylesheet" href="../../stylesheets/body.css">
+	<link rel="stylesheet" href="../../stylesheets/styledb.css">
+    <script src="../../javascript/functions.js"></script>
+    <script>
+
+</script>
+
+</head>
+<body onload="mainDarkmodeData(), mainChangeData()">
+    <div class="header">
+
+        <div id="logo">
+
+
+            <a href="../../index.html"><img class="image-resize" style="width: 80%;" alt="Micro:bit close up" src="../../images/processed/logo/microbit-logo.png"></a>
+
+        </div>
+
+        <div id="title">
+
+            <h1>Micro:Bits</h1>
+
+        </div>
+
+        <div id="darkmode">
+
+            <button onclick="dataToggleMode()" id="dark-mode-button" class="center"><img src="../../images/processed/icons/Moon-icon.png" alt="Moon"></button>
+
+        </div>
+
+        <div id="mode">
+            <button onclick="dataToggleTheme()" id="mode-button" class="center"><img src="../../images/processed/icons/Student-Icon.png" alt="Student"></button>
+
+        </div>
+
+    </div>
+
+    <div class="navbar">
+
+        <a href="../pages/lessons.html">Lessons</a>
+
+        <a href="../pages/gallery.html">Gallery</a>
+
+        <a href="../pages/microbits.html">Micro:bits</a>
+
+        <a href="../pages/about-us.html">About Us</a>
+
+    </div>
+
+	<div class="openinginfo"> <h1 align="center">change or remove your options right here</h1>
+  	<!-- a table holding a form to get customer details so we know who we  are dealing with-->
+	</div>
+
+		  	<form action="amend-delete-page.php" method="post" id="fmSearch">
+			  <table width="900" border="0" align="center">
+		<!-- getting surname and email is plenty enough to accurately find the person we are dealing with-->
+				  <tr>
+					<td class="padded"><label>Your surname</label></td>	<td class="padded"><input name="lastname" maxlength="20" type="text"></td>
+				</tr>
+						<tr>
+					<td class="padded"><label>Email address</label></td>	<td class="padded"><input name="emailaddress" maxlength="25" type="email"></td>
+				</tr>
+				<tr>
+					
+				</tr>
+				<tr>
+					<td class="padded"><label>Unsubscribe from the newletter</label></td>
+				  <td class="padded"> 
+ 						 <input type="radio" id="unsubscribe" name="unsubscribe" value="unsubscribe">
+  	<label for="subscribe">Unsubscribe</label>
+	<br>
+ 	</td>
+				</tr>
+				  <tr>
+					<td class="padded"><label>Remove all my details</label></td>
+				    <td class="padded"><input type="radio" id="delete" name="delete" value="delete">
+					 <label for="delete">Goodbye!</label>
+					<br>
+				    </td>
+					<tr>
+				  		<td>&nbsp;</td>
+						<td>&nbsp;</td>
+				 	    </tr>
+				  <tr>
+				  		<td>&nbsp;</td>
+					    <td><div align="left"><input type="submit" value="Submit" id="greenbutton" > </div>&nbsp;</td>
+						
+				 	    </tr>
+				   </table>
+				
+			  </form
+</body>
+</html>
