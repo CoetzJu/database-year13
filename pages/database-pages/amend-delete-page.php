@@ -96,8 +96,8 @@
 			
 			
 // Next up is connecting to the server and the database on it. Note the log in details are in the code here and so exposed at the moment.
-//$dbconn = @mysqli_connect('localhost', 'root', '', 'yr13dgm1');
-$dbconn = @mysqli_connect('localhost', 'root', '', '13DGM');
+//$dbconn = @mysqli_connect('localhost', 'root', '', 'localhost'); // This is for Xampp 
+$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
 
 //now check that we have a connection. !dbconn means if there ISNT a dbconn variable defined, as above...ie: connection failed
 if(!$dbconn){
@@ -235,7 +235,7 @@ if ($unsubscribe === "yes" AND $delete === "no"){
 			//now confirm back to the customer that thweir recortds have been deleted
 		if ($sqlresult == true AND $sqlresult2 == true AND $sqlresult3 == true AND $sqlresult4 == true AND $sqlresult5 == true){?><p><?php
 			echo "Your records have all been delted and you will recieved no forther communications from us";?><br><?php
-			echo"Thank you for your interest in Cycling Wellington....keep pedalling!";?></p><?php
+			echo"Thank you for being apart of the micro:bits community!! Hopefully we will see you again";?></p><?php
 			}
 	}
 
@@ -244,4 +244,4 @@ if ($unsubscribe === "yes" AND $delete === "no"){
 	<?php 
 	  mysqli_close($dbconn);
 	   ?>
- <a href="#"> <p> Click here to return to the products page</p></a>
+ <div class="commandcancel"> <a href="../../index.html" id="redbutton">return to home</a></div>

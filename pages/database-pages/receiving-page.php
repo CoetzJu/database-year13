@@ -132,8 +132,8 @@
 
 	<?php //now call the connection as a require
 // Next up is connecting to the server and the database on it. Note the log in details are in the code here and so exposed at the moment.
-//$dbconn = @mysqli_connect('localhost', 'root', '', 'localhost');
-$dbconn = @mysqli_connect('localhost', 'root', '', '13DGM');
+//$dbconn = @mysqli_connect('localhost', 'root', '', 'localhost'); // This is for Xampp 
+$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
 
 //now check that we have a connection. !dbconn means if there ISNT a dbconn variable defined, as above...ie: connection failed
 if(!$dbconn){
@@ -178,7 +178,7 @@ The query is in a variable here. It hasnt been implimented at this stage, just p
 		}
 
 	//Finally we have the pulled custID so we can run the Insert for the thrid table
-	$sql5 = "INSERT INTO `purchases` (`Cust_ID`, `purchase-date `, `equipment`, `video_tutorials`, `poster`) VALUES ('$PulledCustomerID', NULL, '$orderdate', '$equipment', '$video_tutorials', '$poster')";
+	$sql5 = "INSERT INTO `purchases` (`Cust_ID`, `purchase-date`, `equipment`, `videos`, `poster`) VALUES ('$PulledCustomerID', '$orderdate', '$equipment', '$video_tutorials', '$poster')";
 	
 		if ($dbconn->query($sql5) === TRUE) {
 	  $sqlresult5 = true;
@@ -262,20 +262,23 @@ if ($sqlresult=== TRUE AND $sqlresult2 === TRUE AND $sqlresult4=== TRUE AND  $sq
   
     <tr>
       
-      <td align = center>Subscribe to our quarterly newsletter</td>
-      <td align = center>The cycle trails guide</td>
-		<td align = center>The equipment guide</td>
-		<td align = center>Making the most of cycling with kids</td>
-		<td align = center>How to repair and maintain your bike</td>
+        <td align = center>Subscribed to our newsletter</td>
+        <td align = center>The poster ordered</td>
+		<td align = center>The hardware equipment</td>
+		<td align = center>Video tutorials</td>
+		<td align = center>Dark mode</td>
+		<td align = center>Student Mode</td>
+		
 		
     </tr>
 		<tr>
      
-      <td align = center><?php echo $newsletter;?></td>
-      <td align = center><?php echo $poster;?></td>
+        <td align = center><?php echo $newsletter;?></td>
+        <td align = center><?php echo $poster;?></td>
 		<td align = center><?php echo $equipment;?></td>
 		<td align = center><?php echo $video_tutorials;?></td>
 		<td align = center><?php echo $darkmode;?></td>
+		<td align = center><?php echo $student;?></td>
 			
     </tr>
 	</table>
