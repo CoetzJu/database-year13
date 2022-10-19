@@ -126,8 +126,33 @@
 		else {
 			$student = "no";
 		}
+	
+	//validating the email and text boxes with in built functions
+
+		if (filter_var($emailaddress, FILTER_VALIDATE_EMAIL)) {}
+		else {echo "Email address '$emailaddress' is invalid. Please go back and check again\n";
+		exit;
+		}
+		$firstname = test_input($_POST['firstname']);
+		if (!preg_match("/^[a-zA-Z-' ]*$/",$firstname)) {
+		  echo "Only letters and white space are allowed in the firstname box";
+			exit;
+		}
+			$surname = test_input($_POST['surname']);
+		if (!preg_match("/^[a-zA-Z-' ]*$/",$surname)) {
+		  echo "Only letters and white space are allowed in the surname box";
+			exit;
+		}
+	
+// and here is the function that preps the text for validation
+		function test_input($data) {
+		  $data = trim($data);
+		  $data = stripslashes($data);
+		  $data = htmlspecialchars($data);
+		  return $data;
+		}
 	?>
-	<p align="center">Thank you for signing up to cycling Wellington. We hope that you will enjoy what is on offer and of course at anytime you can either order more or unsubscribe or just plane leave the site entirely.<br>
+	<p align="center">Thank you for signing up to our micro:bits community. We hope that you will enjoy what is on offer and of course at anytime you can either order more or unsubscribe or just plane leave the site entirely.<br>
 	For your peace of mind, please note that we never pass details to 3rd parties and always abide by the Privacy Act 2020.</p>
 
 	<?php //now call the connection as a require
@@ -283,5 +308,6 @@ if ($sqlresult=== TRUE AND $sqlresult2 === TRUE AND $sqlresult4=== TRUE AND  $sq
     </tr>
 	</table>
 	
- <a href="contact.php"> <p id="return"> Click here to return to the products page</p></a>
- <div class="commandcancel"> <a href="unsignup-page.html" id="redbutton">Amend or delete</a></div>
+	
+	<div class="commandconfirm"><a href="../../index.html" id="greenbutton">Home Page</a></div>
+ 	<div class="commandcancel"> <a href="unsignup-page.html" id="redbutton">Amend or delete</a></div>
