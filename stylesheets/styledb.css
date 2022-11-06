@@ -136,12 +136,18 @@ margin-right:28%;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin: auto;
 	transition-duration: 0.3s;
+	margin-right: 5%;
 }
 
 #greenbutton:hover{
 	background-color: #61F06C;
 	transition-duration: 0.3s;
+}
+
+.commandconfirm{
+	margin: auto;
+	width: 50%;
+	text-align: center;
 }

@@ -96,8 +96,8 @@
 			
 			
 // Next up is connecting to the server and the database on it. Note the log in details are in the code here and so exposed at the moment.
-//$dbconn = @mysqli_connect('localhost', 'root', '', 'localhost'); // This is for Xampp 
-$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
+$dbconn = @mysqli_connect('localhost', 'root', '', '13dgm'); // This is for Xampp 
+//$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
 
 //now check that we have a connection. !dbconn means if there ISNT a dbconn variable defined, as above...ie: connection failed
 if(!$dbconn){
@@ -144,7 +144,7 @@ if ($unsubscribe === "yes" AND $delete === "no"){
 	
 		$mailing_list = "no";
 		//now we set the mailing list to no with this query
-		$sql = "UPDATE customers SET mailing_list = 'no' WHERE Cust_ID = $PulledCustomerID;"; 
+		$sql = "UPDATE personal SET newsletter = 'no' WHERE Cust_ID = $PulledCustomerID;"; 
 
 
 		if ($dbconn->query($sql) === TRUE) {

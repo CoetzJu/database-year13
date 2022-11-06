@@ -138,8 +138,8 @@
 		  echo "Only letters and white space are allowed in the firstname box";
 			exit;
 		}
-			$surname = test_input($_POST['surname']);
-		if (!preg_match("/^[a-zA-Z-' ]*$/",$surname)) {
+		$lastname = test_input($_POST['lastname']);
+		if (!preg_match("/^[a-zA-Z-' ]*$/",$lastname)) {
 		  echo "Only letters and white space are allowed in the surname box";
 			exit;
 		}
@@ -157,8 +157,8 @@
 
 	<?php //now call the connection as a require
 // Next up is connecting to the server and the database on it. Note the log in details are in the code here and so exposed at the moment.
-//$dbconn = @mysqli_connect('localhost', 'root', '', 'localhost'); // This is for Xampp 
-$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
+$dbconn = @mysqli_connect('localhost', 'root', '', '13dgm'); // This is for Xampp 
+//$dbconn = @mysqli_connect('dgm.whs.school.nz', 'yr13dgm4', 'yr13dgm4designer', 'db_yr13dgm4'); // School server
 
 //now check that we have a connection. !dbconn means if there ISNT a dbconn variable defined, as above...ie: connection failed
 if(!$dbconn){
@@ -309,5 +309,4 @@ if ($sqlresult=== TRUE AND $sqlresult2 === TRUE AND $sqlresult4=== TRUE AND  $sq
 	</table>
 	
 	
-	<div class="commandconfirm"><a href="../../index.html" id="greenbutton">Home Page</a></div>
- 	<div class="commandcancel"> <a href="unsignup-page.html" id="redbutton">Amend or delete</a></div>
+	<div class="commandconfirm"><a href="../../index.html" id="greenbutton">Home Page</a><a href="unsignup-page.html" id="redbutton">Amend or delete</a></div>
